@@ -1,7 +1,11 @@
 alias changepp="vim /opt/boxen/repo/modules/people/manifests/MattLishman.pp"
-alias add-alias="vim ~/.matt-zsh-alias && reload"
+alias add-alias="vim ~/zsh-user-config/zsh-alias && reload"
 alias ourboxen="cd /opt/boxen/repo"
 alias editconfig="vim ~/.zshrc && reload"
+alias zshrepo="cd ~/zsh-user-config"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
+
+#git pull and update magento
+alias pullupdate="git pull && composer install && magerun2 setup:upgrade && cd tools && gulp styles --prod && cd - && magerun2 cache:flush"
